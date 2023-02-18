@@ -1,0 +1,91 @@
+.login {
+    font-family: 'Arimo', sans-serif;
+    background-color: rgba(255, 255, 255, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.input-login {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00FF00;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    transition: .5s;
+}
+
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, .4);
+    color: #e52e71;
+    cursor: pointer;
+}
+
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(90deg, #FFFFFF, #6284FF, #FF0000);
+
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 30%;
+    top: 20%;
+    width: 450px;
+    height: 450px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@keyframes sliderShape {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}

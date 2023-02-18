@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="slider-thumb">
+        <div class="container">
+            <div class="cadastro">
+                <h1>Cadastro</h1>
+                <div class="cadastro-float">
+                    <input type="text" name="nome" id="input-nome" class='input-cadastro' placeholder="">
+                    <label for="input-nome" id="labelNome">Nome</label>
+                </div>
+                <div class="cadastro-float">
+                    <input type="text" name="usuario" id="input-usuario" class='input-cadastro' placeholder="">
+                    <label for="input-usuario" id="labelUsuario">Usuário</label>
+                </div>
+                <div class="cadastro-float">
+                    <input type="password" name="password" id="input-senha" class='input-cadastro' placeholder="">
+                    <label for="input-senha" id="labelSenha">Senha</label>
+                </div>
+                <div class="cadastro-float">
+                    <input type="password" name="confirmPassowrd" id="input-confirmSenha" class='input-cadastro'
+                        placeholder="">
+                    <label for="input-confirmSenha" id="labelConfirmSenha">Confirme sua senha</label>
+                </div>
+                <div class="btn-center">
+                    <button class="cadastro-btn" onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/cadastro.js"></script>
+</body>
+
+</html>
