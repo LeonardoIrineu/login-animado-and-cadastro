@@ -1,3 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(90deg, #FFFFFF, #6284FF, #FF0000);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
 .login {
     font-family: 'Arimo', sans-serif;
     background-color: rgba(255, 255, 255, .2);
@@ -15,27 +35,65 @@ h1 {
     justify-content: center;
 }
 
-.input-login {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    border-radius: 50px;
+.login-float {
+    position: relative;
 }
 
-.login-btn {
+.login-float input {
     width: 100%;
+    display: inline-block;
+    outline: none;
+    padding: 15px 24px;
+    min-width: 180px;
+    font-size: 15px;
+    transition: all .5s ease-out;
+    border-radius: 46px;
+    border: none;
+    margin: 6px;
+}
+
+.login-float input:focus {
+    border-bottom: 1px solid #4038a0;
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.login-float label {
+    color: #4038a0;
+    pointer-events: none;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.login-float input:focus+label,
+.login-float input:valid+label {
+    font-size: 14px;
+    color: #0c083f;
+    margin-top: 0;
+}
+
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 60px;
     padding: 15px;
     border: none;
     border-radius: 50px;
     background-color: #00FF00;
-    font-weight: bold;
     text-transform: uppercase;
     color: #fff;
     transition: .5s;
+    font-weight: bold;
 }
 
 .login-btn:hover {
@@ -44,18 +102,27 @@ h1 {
     cursor: pointer;
 }
 
+a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0c083f;
+    margin-right: 8px;
+    font-weight: bold;
+    transition: .5s;
+}
 
-body {
-    height: 100vh;
-    background-image: linear-gradient(90deg, #FFFFFF, #6284FF, #FF0000);
-
+a:hover {
+    color: #120d5f;
 }
 
 .slider-thumb::before {
     position: absolute;
     content: "";
-    left: 30%;
-    top: 20%;
+    left: 32.5%;
+    top: 16%;
     width: 450px;
     height: 450px;
     background: #17141d;

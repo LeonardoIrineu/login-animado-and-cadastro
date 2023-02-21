@@ -11,12 +11,23 @@
 
 <body>
     <div class="slider-thumb">
-        <section class="login">
-            <h1>Login</h1>
-            <input type="text" name="" id="" class="input-login" placeholder="Usuário">
-            <input type="password" name="" id="" class="input-login" placeholder="Senha">
-            <button class="login-btn">Entrar</button>
-        </section>
+        <div class="container">
+            <div class="login">
+                <h1>Login</h1>
+                <div class="login-float">
+                    <input type="text" name="usuario" id="input-usuario" class='input-cadastro' placeholder="">
+                    <label for="input-usuario" id="labelUsuario">Usuário</label>
+                </div>
+                <div class="login-float">
+                    <input type="password" name="password" id="input-senha" class='input-cadastro' placeholder="">
+                    <label for="input-senha" id="labelSenha">Senha</label>
+                </div>
+                <div class="btn-center">
+                    <button class="login-btn">Entrar</button>
+                </div>
+                <p><a href="/html/cadastro.html">Cadastre-se</a></p>
+            </div>
+        </div>
     </div>
 </body>
 
