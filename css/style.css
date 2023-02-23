@@ -35,6 +35,13 @@ h1 {
     justify-content: center;
 }
 
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    padding: 10px;
+    display: none;
+}
+
 .login-float {
     position: relative;
 }
