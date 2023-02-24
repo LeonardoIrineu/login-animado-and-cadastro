@@ -221,6 +221,21 @@ a:hover {
     }
 }
 
+@media screen and (max-width:412px) {
+    .slider-thumb::before {
+        top: 28%;
+        left: 4%;
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    .slider-thumb::before {
+        top: 25%;
+        left: 2%;
+    }
+}
+
 @media screen and (max-width:375px) {
     .slider-thumb::before {
         left: 3%;
