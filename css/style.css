@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100wv;
     background-image: linear-gradient(90deg, #FFFFFF, #6284FF, #FF0000);
 }
 
@@ -128,9 +128,9 @@ a:hover {
 .slider-thumb::before {
     position: absolute;
     content: "";
-    left: 32.5%;
+    left: 33.8%;
     top: 16%;
-    width: 450px;
+    width: 430px;
     height: 450px;
     background: #17141d;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
@@ -161,5 +161,79 @@ a:hover {
     67% {
         border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
         transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+
+/* media */
+
+@media screen and (max-width:1444px) {
+    .slider-thumb::before {
+        left: 34.9%;
+        top: 14%;
+        width: 430px;
+        height: 440px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .slider-thumb::before {
+        top: 8%;
+        left: 27.5%;
+    }
+}
+
+/* mobile*/
+
+@media screen and (max-width:768px) {
+    .slider-thumb::before {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    body {
+        background-image: linear-gradient(#FFFFFF, #6284FF, #FF0000);
+        background-repeat: inherit;
+        background-size: 110% 110%;
+    }
+
+    .slider-thumb::before {
+        left: 6%;
+        top: 12%;
+        width: 380px;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .login-btn {
+        margin-left: 55px;
+        width: 90px;
+        font-size: 10px;
+    }
+
+    a {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .slider-thumb::before {
+        left: 3%;
+        top: 14%;
+        width: 360px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .slider-thumb::before {
+        left: 0%;
+        top: 16%;
+        width: 320px;
+        height: 350px;
     }
 }
