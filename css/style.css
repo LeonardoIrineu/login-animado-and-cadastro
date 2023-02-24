@@ -192,6 +192,7 @@ a:hover {
 
 @media screen and (max-width:425px) {
     body {
+        height: 100vh;
         background-image: linear-gradient(#FFFFFF, #6284FF, #FF0000);
         background-repeat: inherit;
         background-size: 110% 110%;
